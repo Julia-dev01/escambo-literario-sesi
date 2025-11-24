@@ -1,4 +1,4 @@
-# escambo-literario-sesi
+# Escambo-literario-sesi
 Sistema de escambo digital para biblioteca escolar – Projeto SESI
  **Responsável**                   | **Função durante o projeto**                                                   |
  --------------------------------- | ---------------------------------------------------------------------- |
