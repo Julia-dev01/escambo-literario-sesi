@@ -1,5 +1,5 @@
 # Escambo-literario-sesi
-Sistema de escambo digital para biblioteca escolar – Projeto SESI
+Sistema de escambo digital para biblioteca escolar – Projeto SESI - TELAVIVA TECH
  **Responsável**                   | **Função durante o projeto**                                                   |
  --------------------------------- | ---------------------------------------------------------------------- |
  Júlia (Líder)                     | Contém a versão final, estável e revisada do projeto.                  |
