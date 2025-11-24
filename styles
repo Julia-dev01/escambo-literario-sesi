@@ -1,0 +1,240 @@
+/* -----------------------------------------------------------
+   VARIANTES DE TEMA
+----------------------------------------------------------- */
+@custom-variant dark (&:is(.dark *));
+
+/* -----------------------------------------------------------
+   TEMA PADRÃO (modo claro/escuro unificado)
+   Centraliza todas as variáveis de UI em :root
+----------------------------------------------------------- */
+:root {
+  /* Tamanho base da fonte */
+  --font-size: 16px;
+
+  /* Cores principais do tema */
+  --background: #0f0a1e;
+  --foreground: #f5f3ff;
+
+  /* Cartões e popovers */
+  --card: #1a1334;
+  --card-foreground: #f5f3ff;
+  --popover: #1a1334;
+  --popover-foreground: #f5f3ff;
+
+  /* Paleta primária */
+  --primary: #9d4edd;
+  --primary-foreground: #ffffff;
+  --secondary: #7209b7;
+  --secondary-foreground: #ffffff;
+
+  /* Tons neutros */
+  --muted: #2d1f4a;
+  --muted-foreground: #b8a9d4;
+
+  /* Acentos visuais */
+  --accent: #c77dff;
+  --accent-foreground: #ffffff;
+
+  /* Estados destrutivos */
+  --destructive: #ff006e;
+  --destructive-foreground: #ffffff;
+
+  /* Bordas e inputs */
+  --border: rgba(157, 78, 221, 0.2);
+  --input: transparent;
+  --input-background: #1a1334;
+
+  /* Switch */
+  --switch-background: #2d1f4a;
+
+  /* Tipografia */
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+
+  /* Ring (focus outline) */
+  --ring: #9d4edd;
+
+  /* Cores para gráficos */
+  --chart-1: #9d4edd;
+  --chart-2: #c77dff;
+  --chart-3: #7209b7;
+  --chart-4: #3c096c;
+  --chart-5: #10002b;
+
+  /* Arredondamento padrão */
+  --radius: 1rem;
+
+  /* Sidebar */
+  --sidebar: #1a1334;
+  --sidebar-foreground: #f5f3ff;
+  --sidebar-primary: #9d4edd;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2d1f4a;
+  --sidebar-accent-foreground: #f5f3ff;
+  --sidebar-border: rgba(157, 78, 221, 0.2);
+  --sidebar-ring: #9d4edd;
+}
+
+/* -----------------------------------------------------------
+   VARIÁVEIS NO MODO ESCURO
+   (redundantes, mas úteis para futuras expansões)
+----------------------------------------------------------- */
+.dark {
+  --background: #0f0a1e;
+  --foreground: #f5f3ff;
+  --card: #1a1334;
+  --card-foreground: #f5f3ff;
+  --popover: #1a1334;
+  --popover-foreground: #f5f3ff;
+  --primary: #9d4edd;
+  --primary-foreground: #ffffff;
+  --secondary: #7209b7;
+  --secondary-foreground: #ffffff;
+  --muted: #2d1f4a;
+  --muted-foreground: #b8a9d4;
+  --accent: #c77dff;
+  --accent-foreground: #ffffff;
+  --destructive: #ff006e;
+  --destructive-foreground: #ffffff;
+  --border: rgba(157, 78, 221, 0.2);
+  --input: transparent;
+  --ring: #9d4edd;
+  --font-weight-medium: 600;
+  --font-weight-normal: 400;
+
+  /* Gráficos */
+  --chart-1: #9d4edd;
+  --chart-2: #c77dff;
+  --chart-3: #7209b7;
+  --chart-4: #3c096c;
+  --chart-5: #10002b;
+
+  /* Sidebar */
+  --sidebar: #1a1334;
+  --sidebar-foreground: #f5f3ff;
+  --sidebar-primary: #9d4edd;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #2d1f4a;
+  --sidebar-accent-foreground: #f5f3ff;
+  --sidebar-border: rgba(157, 78, 221, 0.2);
+  --sidebar-ring: #9d4edd;
+}
+
+/* -----------------------------------------------------------
+   MAPEO DE VARIÁVEIS PARA O TAILWIND (shadcn)
+----------------------------------------------------------- */
+@theme inline {
+  /* Cores gerais */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  /* Paletas principais */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* Neutros */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  /* Acento */
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* Estado destrutivo */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  /* Elementos */
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+
+  /* Gráficos */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* Raios */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* -----------------------------------------------------------
+   BASE GLOBAL (reset + background)
+----------------------------------------------------------- */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+
+    /* Fundo com gradiente e movimento fixo */
+    background: linear-gradient(
+      135deg,
+      #0f0a1e 0%,
+      #1a0933 50%,
+      #0f0a1e 100%
+    );
+    background-attachment: fixed;
+  }
+}
+
+/* -----------------------------------------------------------
+   TIPOGRAFIA PADRÃO
+   Aplica estilos de texto apenas se o elemento NÃO tiver
+   uma classe Tailwind de texto.
+----------------------------------------------------------- */
+@layer base {
+  :where(:not(:has([class*=' text-']), :not(:has([class^='text-'])))) {
+    h1, h2, h3, h4, p, label, button, input {
+      line-height: 1.5;
+    }
+
+    h1 { font-size: var(--text-2xl); font-weight: var(--font-weight-medium); }
+    h2 { font-size: var(--text-xl); font-weight: var(--font-weight-medium); }
+    h3 { font-size: var(--text-lg); font-weight: var(--font-weight-medium); }
+    h4 { font-size: var(--text-base); font-weight: var(--font-weight-medium); }
+
+    p,
+    input { font-size: var(--text-base); font-weight: var(--font-weight-normal); }
+
+    label,
+    button { font-size: var(--text-base); font-weight: var(--font-weight-medium); }
+  }
+}
+
+/* Tamanho base da fonte do HTML */
+html {
+  font-size: var(--font-size);
+}
+
+/* -----------------------------------------------------------
+   ANIMAÇÕES PERSONALIZADAS
+----------------------------------------------------------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: transl
