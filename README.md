@@ -31,12 +31,41 @@ GitHub: Utilizado para o versionamento do código, controle de issues e document
 Google Docs: Utilizado para a documentação final, incluindo o Relatório de Testes.
 
 ## Cronograma de Desenvolvimento
-Etapa	Descrição	Período Estimado
-Planejamento	Definição de escopo e requisitos iniciais	17/nov/16
-Protótipo	Criação das telas e fluxos no Figma	18/11 a 20/11 
-Desenvolvimento	Codificação e versionamento no GitHub	20/11 a 22/11 
-Testes	Validação do protótipo e correções	23/nov/19
-Entrega Final	Organização da documentação e apresentação	24/nov/20
 <img width="500" height="357" alt="image" src="https://github.com/user-attachments/assets/9e5db4da-7497-42e6-84cb-df11aec50824" />
+
+## Funcionalidades Implementadas
+O projeto entregue possui as seguintes funcionalidades implementadas:
+Cadastro e Login de Usuários (RF01, RF02) 
+Acervo Digital com Busca e Filtros (RF06, RF07) 
+Sistema de Créditos (Geração por Doação e Desconto por Reserva) (RF09, RF10) 
+Reserva de Livros (RF08) 
+Painel do Usuário (RF12) 
+Interface Intuitiva e Responsiva (RNF01, RNF02) 
+
+## Tecnologias Utilizadas:
+O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
+Versionamento: GitHub.
+Design/Protótipo: Figma.
+
+## Testes e Issues:
+Os testes focaram principalmente na validação das regras de negócio do sistema de créditos:
+Cadastro de Usuário: Confirmação da atribuição de 3 créditos de boas-vindas.
+Doação de Livro: Confirmação do ganho de 2 créditos por doação.
+Reserva de Livro: Confirmação do custo de 1 crédito por reserva.
+
+Sugestões de Issues e Melhorias
+Prioridade no Painel Administrativo (RF13): O desenvolvimento do painel administrativo é crucial para o gerenciamento eficaz do acervo e dos usuários pelo administrador.
+Reforço de Teste de Responsividade (RNF02): É altamente recomendado um teste dedicado para garantir que o layout funcione perfeitamente em dispositivos móveis (celular e tablet)
+
+## Documentação Final:
+App.tsx_Prototipo_Figma
+
+Prototipo_Figma_link
+
+Styles_Prototipo_Figma
+
+README.md
+
+
 
 
